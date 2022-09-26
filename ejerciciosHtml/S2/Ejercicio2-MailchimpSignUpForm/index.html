@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp sign-up form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Welcome to Mailchimp</legend>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKjN3f_Xr2pmiKPKeDFKXueAfhIqxI0WobA&usqp=CAU" alt="logo">
+            <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="#">Log in</a></p>
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div>
+                <label for="usuario">Username</label>
+                <input type="text"name="usuario" id="usuario" minlength="3" maxlength="9" required>
+            </div>
+            <div>
+                <label for="contraseña">Password</label>
+                <input type="password" name="contraseña" id="contraseña" minlength="5" maxlength="10" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                ">
+            </div>
+            <ul>
+                <li>One lowercase character</li>
+                <li>One uppercase character</li>
+                <li>One number</li>
+                <li>One spacial character</li>
+                <li>8 characters minimum</li>
+            </ul> 
+            <button type="submit">Sign Up</button>
+            <input type="checkbox" name="noMails" id="noMails">
+            <label for="noMails">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
+            <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
